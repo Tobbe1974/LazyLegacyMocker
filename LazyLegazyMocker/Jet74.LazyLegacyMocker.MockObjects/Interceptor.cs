@@ -29,9 +29,9 @@ namespace Jet74.LazyLegacyMocker.MockObjects
 			OriginalType = t;
 			var type = typeof(T);
 
-			CreateProxy(t, type);
-
 			Printer = new TS();
+			Printer.Target = new FileTarget();
+			CreateProxy(t, type);
 		}
 
 		private void CreateProxy(T t, Type type)
