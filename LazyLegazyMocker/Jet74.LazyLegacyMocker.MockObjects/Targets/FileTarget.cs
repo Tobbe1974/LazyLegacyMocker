@@ -1,26 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Castle.DynamicProxy;
 
-namespace Jet74.LazyLegacyMocker.MockObjects
+namespace Jet74.LazyLegacyMocker.MockObjects.Targets
 {
-	internal class ObjectPrinter : IInterceptor
+	public class FileTarget : ITarget
 	{
-		public void Intercept(IInvocation invocation)
-		{
-			invocation.Proceed();
-
-			PrintObjectTree(invocation);
-		}
-
-		private void PrintObjectTree(IInvocation invocation)
+		public Stream GetTarget(IInvocation invocation)
 		{
 			string fileName = CreateFilename(invocation);
+			CheckFileExist(fileName);
+
+			return File.OpenWrite(fileName);
 		}
 
 		private string CreateFilename(IInvocation invocation)
@@ -37,10 +28,19 @@ namespace Jet74.LazyLegacyMocker.MockObjects
 				builder.Append(arg);
 			}
 			builder.Append(")");
-			return CleanIllegalChars(builder.ToString());
+			return CleanFilename(builder.ToString());
 		}
 
-		private static string CleanIllegalChars(string result)
+		private void CheckFileExist(string fileName)
+		{
+			if (File.Exists(fileName))
+			{	
+				//TODO: Impelemt better behavior
+				File.Delete(fileName);
+			}
+		}
+
+		private static string CleanFilename(string result)
 		{
 			//TODO : Implemet
 			return result;
