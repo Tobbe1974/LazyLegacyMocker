@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Jet74.InterfaceRecorder
+namespace Jet74.LazyLegacyMocker.InterfaceRecorder
 {
     internal class Reflector
     {

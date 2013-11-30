@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Jet74.oRec.Tests.Model
+﻿namespace Jet74.LazyLegacyMocker.Tests.Model
 {
     public class Address
     {

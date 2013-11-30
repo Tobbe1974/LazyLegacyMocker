@@ -1,6 +1,5 @@
 ﻿
-
-namespace Jet74.InterfaceRecorder
+namespace Jet74.LazyLegacyMocker.InterfaceRecorder
 {
     public class Repository
     {

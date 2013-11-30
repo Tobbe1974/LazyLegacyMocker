@@ -1,5 +1,4 @@
-﻿
-namespace Jet74.oRec.Tests.Model
+﻿namespace Jet74.LazyLegacyMocker.Tests.Model
 {
     public sealed class SealedType : ISealedType
     {

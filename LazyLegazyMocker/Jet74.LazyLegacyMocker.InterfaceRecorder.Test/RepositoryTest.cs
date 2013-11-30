@@ -1,9 +1,8 @@
 ﻿using System;
-using Jet74.InterfaceRecorder.Exceptions;
-using Jet74.oRec.Tests.Model;
+using Jet74.LazyLegacyMocker.Tests.Model;
 using Xunit;
 
-namespace Jet74.InterfaceRecorder.Test
+namespace Jet74.LazyLegacyMocker.InterfaceRecorder.Test
 {
     public class RepositoryTest : IDisposable
     {
@@ -43,7 +42,7 @@ namespace Jet74.InterfaceRecorder.Test
         [Fact]
         public void CannotUseSealedType()
         {
-            Assert.Throws<SealedClassNotSupportedException>(() => _repo.AddObjectPrinter(new SealedType()));
+            Assert.Throws<NotSupportedException>(() => _repo.AddObjectPrinter(new SealedType()));
         }
 
         public void Dispose()

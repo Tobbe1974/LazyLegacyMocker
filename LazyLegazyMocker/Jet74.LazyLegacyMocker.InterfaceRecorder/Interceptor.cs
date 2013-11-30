@@ -1,8 +1,7 @@
 ﻿using System;
 using Castle.DynamicProxy;
-using Jet74.InterfaceRecorder.Exceptions;
 
-namespace Jet74.InterfaceRecorder
+namespace Jet74.LazyLegacyMocker.InterfaceRecorder
 {
     internal class Interceptor<T, TS> 
         where T : class
@@ -31,12 +30,12 @@ namespace Jet74.InterfaceRecorder
             if (type.IsClass)
             {
                 if (type.IsSealed)
-                    throw new SealedClassNotSupportedException();
+                    throw new NotSupportedException("Sealed class not supported");
 
                 Proxy = proxyGenerator.CreateClassProxyWithTarget(t, new TS());
                 return;
             }
-            throw new TypeNotSupportedException();
+            throw new NotSupportedException("Type is not supported");
         }
     }
 }
