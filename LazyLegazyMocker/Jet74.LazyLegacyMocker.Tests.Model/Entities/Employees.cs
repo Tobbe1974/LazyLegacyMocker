@@ -1,8 +1,10 @@
-﻿namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
+﻿using System;
+
+namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
 {
 	public class Employees : IEmployees
 	{
-		public Person GetPersonById(int id)
+		public Person GetPersonById(Guid id)
 		{
 			return new Person
 			       {
