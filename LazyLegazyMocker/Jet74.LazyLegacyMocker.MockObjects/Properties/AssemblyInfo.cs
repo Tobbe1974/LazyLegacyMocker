@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Jet74.LazyLegacyMocker.InterfaceRecorderTest")]
+[assembly: AssemblyTitle("Jet74.MockObjects")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Jet74.LazyLegacyMocker.InterfaceRecorderTest")]
+[assembly: AssemblyProduct("Jet74.MockObjects")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("1b174290-ebd2-4924-bca2-80be857b1295")]
+[assembly: Guid("e932d710-3598-4901-ba8f-72b68b77b5e0")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -38,3 +38,4 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: InternalsVisibleTo("Jet74.LazyLegacyMocker.MockObjectsTest")]

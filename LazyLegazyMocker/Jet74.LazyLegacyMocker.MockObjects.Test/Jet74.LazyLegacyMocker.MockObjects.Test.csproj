@@ -48,7 +48,7 @@
     <Compile Include="PrinterTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jet74.LazyLegacyMocker.InterfaceRecorder\Jet74.LazyLegacyMocker.InterfaceRecorder.csproj">
+    <ProjectReference Include="..\Jet74.LazyLegacyMocker.MockObjects\Jet74.LazyLegacyMocker.MockObjects.csproj">
       <Project>{1c728c24-59c1-4f66-b452-080212d3ff82}</Project>
       <Name>Jet74.InterfaceRecorder</Name>
     </ProjectReference>

@@ -7,8 +7,8 @@
     <ProjectGuid>{1C728C24-59C1-4F66-B452-080212D3FF82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jet74.LazyLegacyMocker.InterfaceRecorder</RootNamespace>
-    <AssemblyName>Jet74.LazyLegacyMocker.InterfaceRecorder</AssemblyName>
+    <RootNamespace>Jet74.LazyLegacyMocker.MockObjects</RootNamespace>
+    <AssemblyName>Jet74.LazyLegacyMocker.MockObjects</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InstanceComparer.cs" />
+    <Compile Include="MockObjectProperties.cs" />
     <Compile Include="ObjectPrinter.cs" />
     <Compile Include="Interceptor.cs" />
     <Compile Include="Reflector.cs" />

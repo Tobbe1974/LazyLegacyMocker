@@ -5,9 +5,9 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet74.LazyLegacyMocker.Tests.Model", "Jet74.LazyLegacyMocker.Tests.Model\Jet74.LazyLegacyMocker.Tests.Model.csproj", "{D7401896-0121-4660-A995-31B94F211A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet74.LazyLegacyMocker.InterfaceRecorder", "Jet74.LazyLegacyMocker.InterfaceRecorder\Jet74.LazyLegacyMocker.InterfaceRecorder.csproj", "{1C728C24-59C1-4F66-B452-080212D3FF82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet74.LazyLegacyMocker.MockObjects", "Jet74.LazyLegacyMocker.MockObjects\Jet74.LazyLegacyMocker.MockObjects.csproj", "{1C728C24-59C1-4F66-B452-080212D3FF82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet74.LazyLegacyMocker.InterfaceRecorder.Test", "Jet74.LazyLegacyMocker.InterfaceRecorder.Test\Jet74.LazyLegacyMocker.InterfaceRecorder.Test.csproj", "{A5E0B033-E4A1-4A74-B90A-99E53E6623B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jet74.LazyLegacyMocker.MockObjects.Test", "Jet74.LazyLegacyMocker.MockObjects.Test\Jet74.LazyLegacyMocker.MockObjects.Test.csproj", "{A5E0B033-E4A1-4A74-B90A-99E53E6623B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

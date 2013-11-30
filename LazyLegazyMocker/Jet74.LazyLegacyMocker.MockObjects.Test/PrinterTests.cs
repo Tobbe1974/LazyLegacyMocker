@@ -2,7 +2,7 @@
 using Jet74.LazyLegacyMocker.Tests.Model;
 using Xunit;
 
-namespace Jet74.LazyLegacyMocker.InterfaceRecorder.Test
+namespace Jet74.LazyLegacyMocker.MockObjects.Test
 {
 	public class PrinterTests : IDisposable
 	{

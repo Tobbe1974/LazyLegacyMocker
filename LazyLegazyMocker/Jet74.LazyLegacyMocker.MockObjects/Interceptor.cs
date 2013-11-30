@@ -1,7 +1,7 @@
 ﻿using System;
 using Castle.DynamicProxy;
 
-namespace Jet74.LazyLegacyMocker.InterfaceRecorder
+namespace Jet74.LazyLegacyMocker.MockObjects
 {
 	internal class Interceptor<T, TS>
 		where T : class

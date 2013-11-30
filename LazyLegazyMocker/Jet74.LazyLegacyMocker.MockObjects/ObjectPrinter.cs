@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Castle.DynamicProxy;
 
-namespace Jet74.LazyLegacyMocker.InterfaceRecorder
+namespace Jet74.LazyLegacyMocker.MockObjects
 {
 	internal class ObjectPrinter : IInterceptor
 	{
