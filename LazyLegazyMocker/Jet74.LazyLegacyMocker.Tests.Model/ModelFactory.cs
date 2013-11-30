@@ -1,4 +1,6 @@
-﻿namespace Jet74.LazyLegacyMocker.Tests.Model
+﻿using Jet74.LazyLegacyMocker.Tests.Model.Entities;
+
+namespace Jet74.LazyLegacyMocker.Tests.Model
 {
     public class ModelFactory
     {

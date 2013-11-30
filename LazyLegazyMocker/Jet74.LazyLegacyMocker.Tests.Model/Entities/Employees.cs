@@ -1,4 +1,4 @@
-﻿namespace Jet74.LazyLegacyMocker.Tests.Model
+﻿namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
 {
     public class Employees : IEmployees
     {

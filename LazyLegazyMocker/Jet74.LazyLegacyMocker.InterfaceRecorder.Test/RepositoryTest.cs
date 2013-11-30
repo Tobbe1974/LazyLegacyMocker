@@ -1,5 +1,6 @@
 ﻿using System;
 using Jet74.LazyLegacyMocker.Tests.Model;
+using Jet74.LazyLegacyMocker.Tests.Model.Entities;
 using Xunit;
 
 namespace Jet74.LazyLegacyMocker.InterfaceRecorder.Test
