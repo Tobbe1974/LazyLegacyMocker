@@ -22,7 +22,7 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Test
 		#endregion
 
 		[Fact]
-		public void PrinterDoesIncluedNameSpace()
+		public void PrinterDoesOnlyPrintChangedProperties()
 		{
 		}
 	}

@@ -37,7 +37,7 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Test
 		{
 			var iEmp = _repo.AddObjectPrinter(ModelFactory.IEmployees);
 
-			var emp = iEmp.GetPersonById(0);
+			var emp = iEmp.GetPersonById(Guid.NewGuid());
 			Assert.IsType(typeof (Person), emp);
 		}
 

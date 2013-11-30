@@ -4,11 +4,11 @@ namespace Jet74.LazyLegacyMocker.Tests.Model
 {
 	public class ModelFactory
 	{
-		private static IEmployees _employees = new Employees();
-
-		public static IEmployees IEmployees
+		private static IRecordableInterface _employees = new Recordable();
+		public static IRecordableInterface IEmployees
 		{
 			get { return _employees; }
 		}
+
 	}
 }

@@ -2,18 +2,27 @@
 
 namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
 {
-	public class Employees : IEmployees
+	public class Recordable : IRecordableInterface
 	{
 		public Person GetPersonById(Guid id)
 		{
 			return new Person
 			       {
-				       Id = id,
+				       Id = Guid.NewGuid(),
 				       Address = new Address
 				                 {
 					                 Postalcode = "11111",
 					                 Street = "Street X"
 				                 },
+			       };
+		}
+
+
+		public Address GetAddressWithStreetChanged()
+		{
+			return new Address
+			       {
+				       Street = "A",
 			       };
 		}
 	}
