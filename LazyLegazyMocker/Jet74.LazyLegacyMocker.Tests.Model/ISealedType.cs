@@ -1,7 +1,6 @@
-﻿
-namespace Jet74.LazyLegacyMocker.Tests.Model
+﻿namespace Jet74.LazyLegacyMocker.Tests.Model
 {
-    public interface ISealedType
-    {
-    }
+	public interface ISealedType
+	{
+	}
 }
