@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indentation\AbstractIndentation.cs" />
+    <Compile Include="Indentation\IIndentation.cs" />
+    <Compile Include="Indentation\Spaces.cs" />
+    <Compile Include="Indentation\Tabs.cs" />
     <Compile Include="InstanceComparer.cs" />
     <Compile Include="MockObjectFactory.cs" />
     <Compile Include="MockObjectProperties.cs" />

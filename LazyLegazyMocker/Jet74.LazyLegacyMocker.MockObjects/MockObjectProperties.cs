@@ -17,7 +17,7 @@
 		public MockObjectProperties()
 		{
 			Indetation = Indetation.Tabs;
-			IdentationSize = 1;
+			IndentationSize = 1;
 			WriteUsings = true;
 			WriteFullClassName = false;
 			IdentChildObject = true;
@@ -26,13 +26,13 @@
 		}
 
 		/// <summary>
-		/// Sets the identation type Tabs or Spaces, default Tabs
+		/// Sets the Indentation type Tabs or Spaces, default Tabs
 		/// </summary>
 		public Indetation Indetation { get; set; }
 		/// <summary>
 		/// Sets how much we ident, default 1
 		/// </summary>
-		public int IdentationSize { get; set; }
+		public int IndentationSize { get; set; }
 		/// <summary>
 		/// Write usings at start, default true
 		/// </summary>
