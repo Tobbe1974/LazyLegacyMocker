@@ -7,22 +7,24 @@ namespace Jet74.LazyLegacyMocker.MockObjects
 {
 	public class Repository
 	{
-		public MockObjectProperties Properties { get; set; }
+		public MockObjectProperties Properties { get; private set; }
 		public List<String> AdditionalNamespaces { get; private set; }
 
 		public Repository()
 		{
 			AdditionalNamespaces = new List<string>();
+			Properties = new MockObjectProperties();
 		}
 
 		public T AddObjectPrinter<T>(T i) where T : class
 		{
+			InitFactory();
 			return new Interceptor<T, ObjectPrinter>(i).Proxy;
 		}
 
-		public T AddObjectPrinter<T>(T i, ITarget target) where T : class
+		private void InitFactory()
 		{
-			return new Interceptor<T, ObjectPrinter>(i, target).Proxy;
+			MockObjectFactory.Properties = Properties;
 		}
 	}
 }

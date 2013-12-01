@@ -5,6 +5,12 @@
 		Spaces = 0,
 		Tabs = 1
 	}
+
+	public enum Target
+	{
+		File = 0,
+		Memory = 1,
+	}
 	
 	public class MockObjectProperties
 	{
@@ -16,6 +22,7 @@
 			WriteFullClassName = false;
 			IdentChildObject = true;
 			OnlyWriteNoneDefaultProperties = true;
+			TargetType = Target.File;
 		}
 
 		/// <summary>
@@ -42,5 +49,10 @@
 		/// Only write the properties that does have a vaule that differs from the default when instantiated
 		/// </summary>
 		public bool OnlyWriteNoneDefaultProperties { get; set; }
+		/// <summary>
+		/// Sets the output targert, default File
+		/// </summary>
+		public Target TargetType { get; set; }
+		
 	}
 }

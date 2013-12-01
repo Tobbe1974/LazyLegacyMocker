@@ -6,10 +6,12 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Printers
 {
 	internal class ObjectPrinter : IInterceptor, IObjectPrinter
 	{
-		public ITarget Target { get; set; }
+		public ITarget Target { get; private set; }
 
 		public void Intercept(IInvocation invocation)
 		{
+			Target = MockObjectFactory.CreateTarget();
+
 			invocation.Proceed();
 
 			PrintObjectTree(invocation);

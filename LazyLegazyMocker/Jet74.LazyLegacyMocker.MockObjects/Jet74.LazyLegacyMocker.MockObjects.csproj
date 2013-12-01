@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstanceComparer.cs" />
+    <Compile Include="MockObjectFactory.cs" />
     <Compile Include="MockObjectProperties.cs" />
     <Compile Include="Printers\IObjectPrinter.cs" />
     <Compile Include="Printers\ObjectPrinter.cs" />
