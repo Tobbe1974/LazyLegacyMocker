@@ -19,10 +19,8 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Printers
 
 		private void PrintObjectTree(IInvocation invocation)
 		{
-			using (Stream output = Target.GetTarget(invocation))
-			{
-				
-			}
+			var target = Target.GetWriter(invocation);
+			target.WriteLine("1");
 		}
 	}
 }

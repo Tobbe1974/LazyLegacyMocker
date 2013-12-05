@@ -1,4 +1,6 @@
-﻿namespace Jet74.LazyLegacyMocker.MockObjects
+﻿using Jet74.LazyLegacyMocker.MockObjects.Targets;
+
+namespace Jet74.LazyLegacyMocker.MockObjects
 {
 	public enum Indetation
 	{
@@ -9,7 +11,8 @@
 	public enum Target
 	{
 		File = 0,
-		Memory = 1,
+		String = 1,
+		UserDefined = 99,
 	}
 	
 	public class MockObjectProperties
@@ -23,6 +26,7 @@
 			IdentChildObject = true;
 			OnlyWriteNoneDefaultProperties = true;
 			TargetType = Target.File;
+			SpecifiedTarget = null;
 		}
 
 		/// <summary>
@@ -53,6 +57,10 @@
 		/// Sets the output targert, default File
 		/// </summary>
 		public Target TargetType { get; set; }
+		/// <summary>
+		/// Specifi 
+		/// </summary>
+		public ITarget SpecifiedTarget { get; set; }
 		
 	}
 }

@@ -9,12 +9,16 @@ namespace Jet74.LazyLegacyMocker.MockObjects
 
 		public static ITarget CreateTarget()
 		{
+
 			switch (Properties.TargetType)
 			{
 				case Target.File:
 					return new FileTarget();
-				case Target.Memory:
-					return new MemoryTarget();
+				case Target.String:
+					return new StringTarget();
+				case Target.UserDefined:
+					return Properties.SpecifiedTarget;
+
 			}
 
 			throw new ArgumentException("Unknown target type");

@@ -6,12 +6,12 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Targets
 {
 	public class FileTarget : ITarget
 	{
-		public Stream GetTarget(IInvocation invocation)
+		public StreamWriter GetWriter(IInvocation invocation)
 		{
 			string fileName = CreateFilename(invocation);
 			CheckFileExist(fileName);
 
-			return File.OpenWrite(fileName);
+			return new StreamWriter(File.OpenWrite(fileName));
 		}
 
 		private string CreateFilename(IInvocation invocation)
