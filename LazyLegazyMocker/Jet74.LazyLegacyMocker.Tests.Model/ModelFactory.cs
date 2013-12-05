@@ -4,8 +4,8 @@ namespace Jet74.LazyLegacyMocker.Tests.Model
 {
 	public class ModelFactory
 	{
-		private static IRecordableInterface _employees = new Recordable();
-		public static IRecordableInterface IEmployees
+		private static readonly IEmployees _employees = new Recordable();
+		public static IEmployees IEmployees
 		{
 			get { return _employees; }
 		}

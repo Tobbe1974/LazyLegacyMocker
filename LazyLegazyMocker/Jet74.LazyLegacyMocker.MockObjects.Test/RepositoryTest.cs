@@ -7,7 +7,7 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Test
 {
 	public class RepositoryTest : IDisposable
 	{
-		private Repository _repo;
+		private readonly Repository _repo;
 
 		public RepositoryTest()
 		{

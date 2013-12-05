@@ -2,7 +2,7 @@
 
 namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
 {
-	public class Recordable : IRecordableInterface
+	public class Recordable : IEmployees
 	{
 		public Person GetPersonById(Guid id)
 		{

@@ -7,8 +7,8 @@
     <ProjectGuid>{A5E0B033-E4A1-4A74-B90A-99E53E6623B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jet74.LazyLegacyMocker.InterfaceRecorder.Test</RootNamespace>
-    <AssemblyName>Jet74.LazyLegacyMocker.InterfaceRecorder.Test</AssemblyName>
+    <RootNamespace>Jet74.LazyLegacyMocker.MockObjects.Test</RootNamespace>
+    <AssemblyName>Jet74.LazyLegacyMocker.MockObjects.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>

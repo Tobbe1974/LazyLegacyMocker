@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Recordable.cs" />
-    <Compile Include="IRecordableInterface.cs" />
+    <Compile Include="IEmployees.cs" />
     <Compile Include="ISealedType.cs" />
     <Compile Include="ModelFactory.cs" />
     <Compile Include="Entities\Person.cs" />

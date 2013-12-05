@@ -6,13 +6,6 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Test
 {
 	public class PrinterTests : IDisposable
 	{
-		private Repository _repo;
-
-		public PrinterTests()
-		{
-			_repo = new Repository();
-		}
-
 		#region IDisposable
 
 		public void Dispose()
@@ -24,6 +17,21 @@ namespace Jet74.LazyLegacyMocker.MockObjects.Test
 		[Fact]
 		public void PrinterDoesOnlyPrintChangedProperties()
 		{
+			var repo = GetMemfileRepository();
+			repo.Properties.OnlyWriteNoneDefaultProperties = true;
+
+			repo.AddObjectPrinter(ModelFactory.IEmployees);
+
+			var emp = ModelFactory.IEmployees.GetPersonById(Guid.Empty);
+
+		}
+
+
+		private Repository GetMemfileRepository()
+		{
+			var repo = new Repository();
+			repo.Properties.TargetType = Target.Memory;
+			return repo;
 		}
 	}
 }
