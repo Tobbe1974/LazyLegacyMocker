@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\PhoneNumber.cs" />
     <Compile Include="Entities\Recordable.cs" />
+    <Compile Include="Entities\SomeClass.cs" />
     <Compile Include="IEmployees.cs" />
     <Compile Include="ISealedType.cs" />
     <Compile Include="ModelFactory.cs" />

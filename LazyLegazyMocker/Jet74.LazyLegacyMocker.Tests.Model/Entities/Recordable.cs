@@ -12,7 +12,7 @@ namespace Jet74.LazyLegacyMocker.Tests.Model.Entities
 				       Address = new Address
 				                 {
 					                 Postalcode = "11111",
-					                 Street = "Street X"
+					                 Street = "Street DeepList"
 				                 },
 			       };
 		}

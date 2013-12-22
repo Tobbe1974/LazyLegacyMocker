@@ -38,4 +38,4 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: InternalsVisibleTo("Jet74.LazyLegacyMocker.MockObjectsTest")]
+[assembly: InternalsVisibleTo("Jet74.LazyLegacyMocker.MockObjects.Test")]
